@@ -1,0 +1,565 @@
+/* start global style*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin:0;
+
+}
+.container{
+    width: 100%;
+    margin:auto;
+}
+.clear{
+    clear: both;
+}
+/* end global style*/
+
+/* start navBar style*/
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100% ;
+    background:#996699;
+    overflow: hidden;
+    z-index: 1000;
+}
+.branding{
+    float:left;
+    width: 30%;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.active{
+    background: #663366;
+    padding:5px 8px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.navBar{
+    width: 70%;
+    float:left
+}
+.navBar ul{
+    list-style: none;
+    margin-left:100px;
+}
+.navBar ul li{
+    display: inline-block;
+    margin: 15px;
+    color: white;
+    font-size: 12px;
+}
+.navBar ul li a{
+    text-decoration: none ;
+    color: white;
+    text-transform: uppercase;
+}
+.navBar ul li a:hover{
+    color: #663366 ;
+}
+/*end navBar Style*/
+/*start P + Button style*/
+header{
+    min-width:600px ;
+    min-height: 400px;
+    background: #996699;
+}
+header p{
+    padding-top: 150px;
+    padding-bottom: 50px;
+    margin:auto;
+    width: 600px;
+    text-align: center;
+    color:white;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.7;
+}
+header button{
+    background: #ff6633;
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-bottom: 4px solid #cc6633;
+    color:white;
+    font-size: 20px;
+    margin-left:500px;
+    box-shadow: #000000 2px 5px 110px 4px;
+}
+/* end header style*/
+/*start services style*/
+.services{
+    width: 100%;
+    height: 600px;
+    background: #00cc99;
+}
+.services h2{
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top:100px;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.services hr{
+    width: 100px;
+    margin-left:550px;
+    height: 4px;
+    color: #009999;
+    background: #009999;
+    border: none;
+}
+.services p{
+    color: white;
+    width: 600px;
+    text-align: center;
+    margin:10px auto 100px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.services .service{
+    float: left;
+    width: 25%;
+}
+.service p{
+    width: 250px;
+    text-align: center;
+    margin:auto;
+    font-size: 14px;
+    color: white;
+}
+.service i{
+    font-size: 70px;
+    margin: auto;
+    padding-left: 40%;
+}
+.service h3{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.service .fa-flag{
+    color: #ff6666;
+}
+.service .fa-pencil{
+    color: #ff9900;
+}
+.service .fa-cogs{
+    color: #3366cc;
+}
+.service .fa-plane{
+   color: #ccffff;
+}
+/*end services style*/
+/* start team style*/
+.team{
+    width: 100%;
+    min-height: 650px;
+    background: #ccffff;
+    padding-bottom: 50px;
+}
+.team h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 100px;
+    color: #333366;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.team hr{
+    width: 100px;
+    margin-left:550px;
+    margin-top: 10px;
+    height: 4px;
+    color: #333366;
+    background: #333366;
+    border: none;
+}
+.team p{
+    color: #333366;
+    text-align: center;
+    margin:20px auto;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.team hr + p{
+    color: #333366;
+    text-align: center;
+    margin:20px auto 50px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.team .person{
+    float: left;
+    width: 25%;
+    padding-bottom: 100px;
+}
+.team .person img{
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    margin-left: 70px;
+}
+.team .person img:hover{
+   /*css 3*/ /*-webkit-transform: rotate(180deg);*/
+    /*transform: translate(50px);*/
+   /* -webkit-transform: scale(2);*/
+    /*transform: skew(90deg);*/
+    animation :rotate 2s infinite;
+}
+.person h3{
+    text-align: center;
+    margin: 10px 0;
+    color: #333366;
+    font-size: 22px;
+}
+.person span{
+    text-align: center;
+    font-size: 16px;
+    color: #33ccff;
+    margin-left: 90px;
+}
+.person p{
+    width: 180px;
+    color: #999999;
+}
+.person ul{
+    list-style: none;
+    margin-left: 30px;
+}
+.person ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.person ul li i{
+    font-size: 25px;
+    background: #cccccc;
+    color: white;
+    border-radius: 50%;
+    padding: 8px 5px;
+    cursor: pointer;
+}
+.person ul li i:hover{
+    background: blue;
+}
+/* end team style*/
+/*start feature style*/
+canvas {
+    display: block;
+    position:absolute;
+    top:220px;
+    left:220px;
+    bottom: 0;
+}
+canvas {
+    display: block;
+    position:absolute;
+    top:0;
+    left:57px;
+    bottom: 0;
+}
+.chart span {
+    display:block;
+    color:#333366;
+    line-height:180px;
+    text-align:center;
+    width:145px;
+    font-size:24px;
+    margin: auto;
+}
+.feature{
+    min-height: 400px;
+    width: 100%;
+}
+.feature h2{
+    text-align: center;
+    text-transform: uppercase;
+    text-space: 7;
+    letter-spacing: 3px;
+    padding-top:80px;
+    color: #333366;
+    font-size: 36px;
+    font-weight: bold;
+}
+.feature hr{
+    background-color: #ccffff;
+    height: 2px;
+    width: 80px;
+    margin:5px auto;
+    border: none;
+}
+.feature p {
+    color: #333;
+    width: 500px;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 10px auto;
+    text-align: center;
+}
+.feature .feat{
+    position: relative;
+    float: left;
+    width: 25%;
+}
+.feature .feat h3{
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333366;
+    line-height: 20px;
+    padding-bottom: 100px;
+}
+
+/* end features style*/
+/* Start Portfolio Style*/
+.portfolio{
+    width: 100%;
+    min-height: 600px;
+    background: #ffcc99;
+    padding-bottom: 50px;
+}
+.portfolio h2{
+    text-align: center;
+    padding-top: 80px;
+    color: #333333;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.portfolio hr{
+    width: 100px;
+    margin-left:550px;
+    height: 4px;
+    background: #cccc66;
+    border: none;
+}
+.portfolio p{
+    width: 500px;
+    text-align: center;
+    margin:20px auto;
+
+}
+.portfolio .buttons{
+    list-style: none;
+    margin-left: 30%;
+}
+.portfolio .buttons li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.portfolio .buttons li button{
+    background: #cccc66;
+    width: 100px;
+    padding: 8px;
+    color: #333333;
+    text-transform: uppercase;
+    border: none;
+}
+.portfolio .buttons li .active{
+    background: white;
+    border-radius: 0;
+}
+.portfolio .port{
+    float: left;
+    width: 50%;
+    padding-top: 20px;
+}
+.portfolio .port span{
+    display: block;
+    text-align: center;
+}
+.portfolio div + button{
+    width: 200px;
+    height: 50px;
+    background: #00cc99;
+    margin-left: 500px;
+    border: none;
+    border-bottom: 4px solid #009999;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-top: 30px;
+}
+/* End Portfolio Style*/
+/* Start Testimonial section*/
+.testimonials {
+    width: 100%;
+    min-height: 650px;
+    background: #c39;
+    padding-bottom: 50px;
+}
+.testimonials h2{
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.testimonials hr{
+    width: 100px;
+    margin-left:550px;
+    height: 4px;
+    background: #cc0066;
+    border: none;
+    margin-bottom: 10px;
+}
+.testimonials hr + span{
+    display: block;
+    text-align: center;
+    color: white;
+}
+.testimonials .testi{
+    float:left;
+    width: 50%;
+    padding-top: 80px;
+}
+.testimonials .testi img , .testimonials .testi .info{
+    float:left;
+}
+.testimonials .testi .info{
+    width: 70%;
+    margin-left: 50px;
+}
+.testimonials .testi .info p{
+    width: 300px;
+    color: white;
+    line-height: 1.7;
+    text-align: left;
+}
+.testimonials .testi .info h3{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.testimonials .testi .info span{
+    color: #ffcc99;
+}
+.testimonials .testi img{
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: 50px;
+}
+/* End Testimonial section*/
+/* Start Contact Style*/
+.contactUs{
+    width: 100%;
+    min-height: 600px;
+    background: #336699;
+}
+.contactUs h2{
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.contactUs hr{
+    width: 100px;
+    margin-left:550px;
+    height: 4px;
+    background: #333366;
+    border: none;
+    margin-bottom: 10px;
+}
+.contactUs p{
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding-top: 20px;
+}
+.contact{
+    width: 80%;
+    margin-left: 18%;
+    padding-top: 50px;
+}
+.contact form input[type="text"],.contact form input[type="email"]{
+   width: 39%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    padding: 8px;
+    background: #333366;
+    border: none;
+    color: white;
+}
+.contact form textarea{
+    display: block;
+    width: 80%;
+    height: 200px;
+    background: #333366;
+    border: none;
+    padding: 8px;
+    resize: none;
+    color: white;
+}
+.contact form input[type="submit"]{
+    width: 200px;
+    height: 50px;
+    background: #33ccff;
+    margin-left: 30%;
+    border: none;
+    margin-top: 50px;
+    padding: 5px;
+    border-bottom: 4px solid #3399cc;
+}
+/*End contact style*/
+/*start footer*/
+footer{
+    width: 100%;
+    min-height: 10px;
+    background: #333399;
+
+}
+footer ul{
+    list-style: none;
+    margin-left: 20%;
+    padding-top: 10px;
+}
+footer ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+@keyframes rotate{
+    from{
+       rotate:0deg ;
+    }to{
+        rotate:360deg
+         }
+}
+/*End footer*/

@@ -1,0 +1,93 @@
+mysql -u root -p
+__________________________________________________________________________________
+__________________________________________________________________________________
+SHOW GRANTS;
+SHOW DATABASES;
+USE SECTION;
+SHOW TABLES;
+DROP DATABASE SECTION;
+DROP TABLE student;
+CREATE DATABASE NAME;
+DESC Student;
+
+__________________________________________________________________________________
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+__________________________________________________________________________________
+
+CREATE TABLE Department(
+ID CHAR(2),
+NAME  VARCHAR(225),
+budget INTEGER,
+dean VARCHAR(225),
+PRIMARY KEY (ID)
+);
+
+##-----------------------------------------------------------------------------------
+
+
+CREATE TABLE STUDENT (
+ID INTEGER,
+NAME  VARCHAR(225),
+ADDRESS VARCHAR(225),
+DEPARTMENT CHAR(2),
+DEGREE INTEGER,
+PHONE INTEGER,
+PRIMARY KEY(ID),
+FOREIGN KEY (DEPARTMENT) REFERENCES Department (id) ON DELETE CASCADE 
+);
+
+___________________________________________________________________________________
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+__________________________________-INSERT-_________________________________________
+
+INSERT INTO Department values ('IT','information technology',100,'Khaled Amen');
+INSERT INTO Department values ('CS','Computer Science',200,'Hamdy Mosa');
+INSERT INTO Department values ('IS','information System',50,'Hatem');
+INSERT INTO Department values ('OR','OPERATION RESEARCH',100,'Nancy Appas');
+INSERT INTO Department values ('NA','NONE',100,'Khaled Amen');
+
+
+INSERT INTO student VALUES(225,'Mustafa','Menofia','CS',90,01100592972);
+INSERT INTO student VALUES(226,'Mohammed','Menofia','it',100,01026686241);
+INSERT INTO student VALUES(227,'Walid','tanta','it',80,010123456789);
+INSERT INTO student VALUES(228,'adham','menofia','it',80,010123456789);
+INSERT INTO student VALUES(229,'Marim','menofia','OR',88,010123456789);
+
+____________________________________________________________________________________
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+__________________________________-SELECT-__________________________________________
+
+SELECT * FROM student;  			       	# <!-- For all rows -->
+SELECT name FROM student;
+SELECT name,degree FROM student;
+SELECT name,degree FROM student WHERE degree >= 90;
+SELECT name,degree FROM student WHERE name='adham';
+SELECT name,degree FROM student WHERE address='menofia';
+SELECT name,degree FROM student WHERE address='menofia'and degree >=90;
+SELECT name,degree FROM student WHERE id IN (225,226);
+
+SELECT * FROM student WHERE name like 'M%';  		# <!-- FOR SELECT name started with M -->
+SELECT * FROM student WHERE name like 'M%a';
+SELECT * FROM student WHERE name like '%a%'; 
+
+SELECT * FROM student ORDER BY degree; 
+SELECT * FROM student ORDER BY degree des;
+
+SELECT student.name, department.dean FROM Student JOIN Department ;
+SELECT student.name, department.dean FROM Student JOIN Department on Student.department =department.id;
+SELECT S.name ,S.degree,s.department ,d.name ,d.dean FREOM Student AS S JOIN Department AS d ON s.department =d.id;
+____________________________________________________________________________________
+////////////////////////////////////////////////////////////////////////////////////
+__________________________________-DELETE-__________________________________________
+
+DELETE FROM student;
+DELETE FROM student WHERE NAME ='ZEZO';
+DELETE FROM department where id='OR';
+_____________________________________________________________________________________
+/////////////////////////////////////////////////////////////////////////////////////
+____________________________________-UPDATE-_________________________________________
+
+UPDATE student set department ='it' WHERE name like 'm%';
+_____________________________________________________________________________________
+/////////////////////////////////////////////////////////////////////////////////////
+_____________________________________________________________________________________

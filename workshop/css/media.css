@@ -1,0 +1,22 @@
+@media (max-width:767px ) {
+    .navBar {
+        display: none;
+    }
+
+    header {
+        min-width:300px ;
+
+    }
+    header p{
+        padding-top: 100px;
+        width: 300px;
+        font-size: 20px;
+    }
+    header button{
+        width: 150px;
+        height: 45px;
+        margin-left:50px;
+    }
+
+
+}
